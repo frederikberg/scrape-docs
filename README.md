@@ -14,7 +14,7 @@ pipx install git+https://github.com/frederikb96/scrape-docs.git
 
 Requirements: Python 3.9+
 
-Chromium browser (~100MB) auto-downloads to `~/.cache/ms-playwright/` on first run.
+Chromium browser auto-downloads to `~/.cache/ms-playwright/` on first run.
 
 ## Usage
 
@@ -37,12 +37,12 @@ scrape-docs https://site.com/docs -o output.md -w 10000
 
 **Works:**
 - docs.gitlab.com
-- Various Docusaurus sites
+- example.com
 
 **Timeout issues:**
-- platform.openai.com/docs (possible anti-bot protection)
+- platform.openai.com/docs
 
-Your mileage may vary - modern docs sites have varying levels of JavaScript complexity and bot detection.
+Your mileage may vary - modern docs sites have varying levels of JavaScript complexity.
 
 ## How It Works
 
@@ -54,7 +54,7 @@ Timeout is 60 seconds - pages that don't fully load by then will fail.
 ## Limitations
 
 - Single pages only (no site-wide crawling)
-- Sites with anti-bot protection may block or timeout
+- Some sites may timeout
 - No authentication support
 - Large pages may produce incomplete extraction
 

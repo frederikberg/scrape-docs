@@ -6,7 +6,7 @@ Scrapes modern JavaScript-heavy documentation sites to clean Markdown.
 Installation:
   pipx install git+https://github.com/frederikb96/scrape-docs.git
 
-On first run, chromium browser (~100MB) is automatically downloaded to
+On first run, chromium browser is automatically downloaded to
 ~/.cache/ms-playwright/ if not already installed.
 
 See pyproject.toml for dependencies.
@@ -36,7 +36,7 @@ def ensure_chromium():
                 browser.close()
             except Exception:
                 # Chromium not found, install it
-                print("First run: Installing chromium browser (~100MB)...", file=sys.stderr)
+                print("First run: Installing chromium browser...", file=sys.stderr)
                 print("This is a one-time download to ~/.cache/ms-playwright/", file=sys.stderr)
                 subprocess.run([sys.executable, "-m", "playwright", "install", "chromium"], check=True)
                 print("Chromium installed successfully!", file=sys.stderr)
