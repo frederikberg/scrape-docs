@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrape-docs"
+version = "1.0.0"
+description = "Documentation scraper using Playwright + Trafilatura"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Frederik Berg", email = "frederik@fredberg.net"}
+]
+keywords = ["documentation", "scraper", "markdown", "playwright", "offline"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "trafilatura>=1.6.0",
+    "playwright>=1.40.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/FrederikBerg/scrape-docs"
+Repository = "https://github.com/FrederikBerg/scrape-docs"
+Issues = "https://github.com/FrederikBerg/scrape-docs/issues"
+
+[project.scripts]
+scrape-docs = "scrape_docs:main"
