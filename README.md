@@ -9,7 +9,7 @@ Converts JavaScript-rendered documentation websites to offline Markdown files. U
 ## Installation
 
 ```bash
-pipx install git+https://github.com/frederikb96/scrape-docs.git
+pipx install git+https://github.com/frederikberg/scrape-docs.git
 ```
 
 Requirements: Python 3.9+

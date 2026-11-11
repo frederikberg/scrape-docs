@@ -4,7 +4,7 @@ Documentation scraper using Playwright + Trafilatura.
 Scrapes modern JavaScript-heavy documentation sites to clean Markdown.
 
 Installation:
-  pipx install git+https://github.com/frederikb96/scrape-docs.git
+  pipx install git+https://github.com/frederikberg/scrape-docs.git
 
 On first run, chromium browser is automatically downloaded to
 ~/.cache/ms-playwright/ if not already installed.
@@ -23,7 +23,7 @@ try:
     from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 except ImportError:
     print("Error: Required packages not installed.", file=sys.stderr)
-    print("Install with: pipx install git+https://github.com/frederikb96/scrape-docs.git", file=sys.stderr)
+    print("Install with: pipx install git+https://github.com/frederikberg/scrape-docs.git", file=sys.stderr)
     sys.exit(1)
 
 

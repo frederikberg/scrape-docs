@@ -30,9 +30,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/frederikb96/scrape-docs"
-Repository = "https://github.com/frederikb96/scrape-docs"
-Issues = "https://github.com/frederikb96/scrape-docs/issues"
+Homepage = "https://github.com/frederikberg/scrape-docs"
+Repository = "https://github.com/frederikberg/scrape-docs"
+Issues = "https://github.com/frederikberg/scrape-docs/issues"
 
 [project.scripts]
 scrape-docs = "scrape_docs:main"
